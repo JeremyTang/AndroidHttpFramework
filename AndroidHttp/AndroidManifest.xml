@@ -25,6 +25,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.jingliang.androidhttp.asynchttp.AsyncHttpActivity"></activity>
+        <activity android:name="com.jingliang.androidhttp.xutil.XutilsActivity"></activity>
     </application>
 
 </manifest>

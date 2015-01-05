@@ -6,7 +6,7 @@
 
     <!-- Button text -->
     <string name="asynchttp">AsyncHttp</string>
-
+    <string name="xutils">Xuitls</string>
     <!--  -->
 
 </resources>

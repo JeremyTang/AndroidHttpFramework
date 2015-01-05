@@ -2,12 +2,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:padding="15dp" >
 
     <Button
         android:id="@+id/button_asynchttp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/asynchttp" />
+
+    <Button
+        android:id="@+id/button_xutils"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/xutils" />
 
 </LinearLayout>
