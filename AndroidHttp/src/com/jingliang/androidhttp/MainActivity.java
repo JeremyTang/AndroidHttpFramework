@@ -1,5 +1,6 @@
 package com.jingliang.androidhttp;
 
+import com.jingliang.androidhttp.asynchttp.AsyncHttpActivity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -26,4 +27,5 @@ public class MainActivity extends Activity {
 					}
 				});
 	}
+
 }

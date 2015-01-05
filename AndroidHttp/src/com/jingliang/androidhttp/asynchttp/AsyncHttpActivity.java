@@ -1,9 +1,9 @@
-package com.jingliang.androidhttp;
+package com.jingliang.androidhttp.asynchttp;
 
 import org.apache.http.Header;
 import org.json.JSONArray;
 
-import com.loopj.android.http.AsyncHttpClient;
+import com.jingliang.androidhttp.R;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.JsonHttpResponseHandler;
 import com.loopj.android.http.TextHttpResponseHandler;
@@ -14,13 +14,16 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+/**
+ * 
+ * @author tjl
+ *
+ */
 public class AsyncHttpActivity extends Activity {
-	
+
 	private static final String URL = "http://www.baidu.com";
 	private TextView resultText;
 	private ProgressBar requestProgress;
-
-	private AsyncHttpClient mClient = new AsyncHttpClient();
 
 	protected void onCreate(android.os.Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -29,8 +32,7 @@ public class AsyncHttpActivity extends Activity {
 		resultText = (TextView) findViewById(R.id.text_result);
 		requestProgress = (ProgressBar) findViewById(R.id.progress_request);
 
-		mClient.setTimeout(10000);
-		mClient.get(URL, new MyTextHandler());
+		AsyncHttpUtil.getHttpClient().get(URL, new MyTextHandler());
 		requestProgress.setVisibility(View.VISIBLE);
 	};
 

@@ -24,7 +24,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AsyncHttpActivity"></activity>
+        <activity android:name="com.jingliang.androidhttp.asynchttp.AsyncHttpActivity"></activity>
     </application>
 
 </manifest>
